@@ -1,0 +1,91 @@
+/* GetSummary.css */
+
+.GetSummary {
+  background-color: #f0f4f8;
+  /* soft blue-gray background */
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
+  /* dark slate for text */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.GetSummary form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.GetSummary p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #34495e;
+}
+
+.GetSummary textarea {
+  height: 120px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+.GetSummary button {
+  display: inline-block;
+  background-color: #2980b9;
+  /* vibrant blue */
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.GetSummary button:hover {
+  background-color: #1c5980;
+}
+
+.GetSummary .summary-content {
+  background-color: #ffffff;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Loader styling */
+.loader {
+  border: 8px solid #f3f3f3;
+  /* light grey */
+  border-top: 8px solid #2980b9;
+  /* blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 2rem auto;
+  /* Center the spinner */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
