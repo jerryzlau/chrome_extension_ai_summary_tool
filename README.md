@@ -1,5 +1,13 @@
 ## Chrome webpage summarize extension
 
+Start extension
+
+![start](./assets/start_example.png)
+
+Extension summary
+
+![summary](./assets/summary_example.png)
+
 ## How to start server
 
 1. cd server
