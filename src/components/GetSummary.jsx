@@ -63,7 +63,6 @@ function GetSummary() {
     setLoading(false);
   };
 
-
   const renderPrompt = () => {
     return (
       <>
@@ -80,8 +79,16 @@ function GetSummary() {
     )
   };
 
+  const handleReset = () => {
+    setSummary('');
+    setPrompt('');
+  }
+
   const renderContent = () => {
-    return summary ? <div dangerouslySetInnerHTML={{ __html: summary }} /> : renderPrompt();
+    return summary ? <div>
+      <div dangerouslySetInnerHTML={{ __html: summary }} />
+      <button onClick={handleReset}>Reset!</button>
+    </div> : renderPrompt();
   }
 
   return (
